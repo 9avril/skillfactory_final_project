@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-top: -20px;
+}
+
+.logo-section {
+    display: flex;
+    margin-left: 20px;
+}
+
+.logo-section img {
+    width: 141px;
+    height: auto;
+}
+
+.navigation-section,
+.auth-section {
+    display: flex;
+    align-items: center;
+}
+
+.navigation-section a,
+.auth-section a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.auth-section a:last-child {
+    margin-left: 20px;
+}
+
+.auth-section a:first-child {
+    opacity: 0.6; /* Сделает ссылку "Зарегистрироваться" прозрачной на 40% */
+}
+
+.auth-section a:last-child {
+    border: 2px solid #7CE3E1; /* Добавит рамку вокруг ссылки "Войти" */
+    padding: 5px 10px; /* Добавьте отступы вокруг текста внутри рамки */
+    border-radius: 5px;
+    background-color: #7CE3E1;
+    font-weight: 550;
+}
+
+.divider {
+    height: 20px;
+    width: 2px;
+    background-color: #029491;
+    margin: 0 10px;
+}
+
+.user-section {
+    display: flex;
+    align-items: center;
+}
+
+.user-name {
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: #000000;
+    margin-right: 8px; /* Добавляем небольшой отступ между именем и аватаркой */
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-right: 8px;
+}
+
+.user-avatar {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 4px;
+}
+
+.logout-button {
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.4);
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-top: 4px;
+    margin-left: 30px;
+}
+  
+  

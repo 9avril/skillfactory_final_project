@@ -1,0 +1,190 @@
+.rates-title {
+    font-family: 'Ferry';
+    font-size: 45px;
+    font-weight: 900;
+    line-height: 54px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    margin-left: 50px;
+}
+
+.rates-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 5px;
+    padding: 0 50px;
+    margin-bottom: 70px;
+}
+
+.rate-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px 10px 0px 0px;
+    border: none;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.rate-card.black-bg {
+    color: white;
+}
+
+.rate-header {
+    width: 415px;
+    height: 132px;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10px 20px 10px 30px;
+}
+
+.rate-card-header {
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.rate-header h3, .rate-header p {
+    margin-bottom: 5px;
+}
+
+.rate-header h3 {
+    font-family: 'Inter';
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 36px;
+    letter-spacing: 0.01em;
+    text-align: left;
+}
+
+.rate-header p {
+    font-family: 'Inter';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.01em;
+    text-align: left;
+}
+
+.price {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 10px;
+}
+
+.current-price, .old-price {
+    font-family: 'Inter';
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 36px;
+    letter-spacing: 0.01em;
+    text-align: left;
+}
+
+
+.old-price {
+    font-size: 25px;
+    line-height: 30.26px;
+    text-decoration: line-through;
+    color: gray;
+}
+
+.installment-info {
+    min-height: 40px;
+}
+
+
+.rate-body p, .rate-body ul, .rate-body li {
+    font-family: 'Inter';
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+.rate-card .rate-header.black-bg {
+    color: white;
+}
+
+.rate-card .rate-header.black-bg h3,
+.rate-card .rate-header.black-bg p {
+    color: white;
+}
+
+.rate-list {
+    margin-left: 10px;
+}
+
+.rate-body p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.01em;
+    text-align: left;
+}
+
+.rate-body h4 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    text-align: left;
+}
+
+.rate-body ul {
+    padding-left: 30px;
+    list-style: none;
+}
+
+.rate-card .rate-header.black-bg {
+    color: white;
+}
+
+.rate-card .rate-header.black-bg h3,
+.rate-card .rate-header.black-bg p {
+    color: white;
+}
+
+
+.details-btn {
+    width: 75%;
+    height: 59px;
+    border-radius: 5px;
+    background-color: #5970FF;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-family: 'Inter';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    text-align: center;
+    margin: 0 auto 10px auto;
+    display: block;
+}
+
+.icon-wrapper {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.rate-icon {
+    width: 90px;
+    height: 90px;
+}
+
+.list-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.authenticated-btn {
+    background: #D2D2D2;
+    color: black;
+}
+

@@ -1,0 +1,83 @@
+.news-card {
+    width: 335px;
+    height: 700px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 0px #00000033;
+    padding: 15px;
+    margin-bottom: 20px;
+    margin-left: 2rem;
+    background: #ffff;
+}
+
+.date, .company-name, .word-count {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: #949494;
+}
+
+.top-info, .bottom-info {
+    display: flex;
+    align-items: center;
+}
+
+.date {
+    margin-right: 10px;
+}
+
+.read-more-button {
+    margin-right: 10px;
+}
+
+.word-count {
+    margin-top: 4rem;
+    margin-left: 3em;
+}
+
+.card-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 23px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: #000000;
+}
+
+.news-image {
+    width: 297px;
+    height: 158px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.content-text {
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: #000000;
+    opacity: 60%;
+}
+
+.read-more-button {
+    width: 195px;
+    height: 40.7px;
+    border: 0;
+    border-radius: 5px;
+    background-color: #7CE3E1;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: #000000;
+    cursor: pointer;
+    margin-top: 2rem;
+}

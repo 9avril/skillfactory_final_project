@@ -1,0 +1,52 @@
+
+.description-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .text-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .title {
+    flex: 1;
+    font-family: 'Ferry', sans-serif;
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 72px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    margin-top: -55px;
+  }
+  
+  .subtitle {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24.2px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+  }
+  
+  .request-button {
+    background-color: #5970FF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 335px;
+    height: 59px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: 50px;
+    margin-top: 30px;
+  }
+  
+  .image-section {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 70px;
+  }  

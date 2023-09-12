@@ -1,0 +1,60 @@
+
+.find-data-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+
+.find-data-header {
+    font-family: 'Ferry', sans-serif;
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 48px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: #000000;
+    margin-left: 30px;
+}
+
+.find-data-subheader {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24.2px;
+    letter-spacing: 2%;
+    margin-left: 30px;
+}
+
+.raketa-image {
+    width: 440px;
+    height: 470px;
+    margin-bottom: 70px;
+}
+
+.img-container {
+    align-self: flex-end;
+}
+
+.document-image {
+    position: absolute;
+    width: 91.00005340576172px;
+    height: 111.1182861328125px;
+    top: 225px;
+    left: 938px;
+}
+
+.folders-image {
+    position: absolute;
+    width: 140.60792541503906px;
+    height: 68.39352416992188px;
+    top: 243px;
+    left: 1195px;
+}
+
+.form-and-image {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

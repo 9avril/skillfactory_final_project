@@ -1,0 +1,51 @@
+import React from 'react';
+import {Link} from 'react-router-dom';
+import './Header.css';
+import logo_scan from '../assets/logo_scan.svg';
+import avatar from './avatar.svg';
+import {useAuth} from '../Auth/AuthContext.tsx';
+import FieldComponent from "./FieldComponent.tsx";
+
+interface HeaderProps {
+    title: string;
+}
+
+const Header: React.FC<HeaderProps> = ({title}) => {
+    const {isLoggedIn, logout} = useAuth();
+
+    return (
+        <header>
+            <div className="header-container">
+                <div className="logo-section">
+                    <img src={logo_scan} alt="logo"/>
+                    <h1>{title}</h1>
+                </div>
+                <nav className="navigation-section">
+                    <Link to="/">Главная</Link>
+                    <Link to="/tariffs">Тарифы</Link>
+                    <Link to="/faq">FAQ</Link>
+                </nav>
+                <div className="auth-section">
+                    {isLoggedIn ? (
+                        <div className="user-section">
+                            <div className="user-info">
+                                <span className="user-name">Алексей А.</span>
+                                <button className="logout-button" onClick={logout}>Выйти</button>
+                            </div>
+                            <img className="user-avatar" src={avatar} alt="User Avatar"/>
+                            <FieldComponent isLoggedIn={isLoggedIn}/>
+                        </div>
+                    ) : (
+                        <>
+                            <Link to="/signup">Зарегистрироваться</Link>
+                            <div className="divider"></div>
+                            <Link to="/login">Войти</Link>
+                        </>
+                    )}
+                </div>
+            </div>
+        </header>
+    );
+};
+
+export default Header;

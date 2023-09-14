@@ -66,29 +66,7 @@ const SearchForm: React.FC = () => {
         <div>
             <DataInputComponent formData={formData} handleInputChange={handleInputChange} setData={setData}
             />
-
-            <Modal
-                isOpen={newsData !== null}
-                onRequestClose={() => setData(null)}
-                style={{
-                    overlay: {
-                        backgroundColor: 'rgba(0, 0, 0, 0.4)'
-                    },
-                    content: {
-                        top: '50%',
-                        left: '50%',
-                        right: 'auto',
-                        bottom: 'auto',
-                        transform: 'translate(-50%, -50%)',
-                        width: '440px',
-                        height: '730px',
-                        overflow: 'hidden'
-                    }
-                }}
-            >
-                {newsData && <NewsCard {...newsData} />}
-            </Modal>
-
+            {newsData && <NewsCard {...newsData} />}
         </div>
     );
 }

@@ -38,6 +38,7 @@
     justify-content: center;
     align-items: flex-start;
     padding: 10px 20px 10px 30px;
+    margin-bottom: 50px;
 }
 
 .rate-card-header {
@@ -114,7 +115,8 @@
 }
 
 .rate-list {
-    margin-left: 10px;
+    margin-left: 40px;
+    margin-bottom: 10px;
 }
 
 .rate-body p {
@@ -136,6 +138,7 @@
 .rate-body ul {
     padding-left: 30px;
     list-style: none;
+    margin-top: 5px;
 }
 
 .rate-card .rate-header.black-bg {
@@ -188,3 +191,22 @@
     color: black;
 }
 
+.current-rate-badge {
+    position: absolute;
+    width: 134px;
+    height: 24px;
+    top: 165px;
+    right: 16px;
+    background-color: #3BA5E0;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: #FFFFFF;
+}

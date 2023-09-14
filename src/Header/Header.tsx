@@ -16,32 +16,38 @@ const Header: React.FC<HeaderProps> = ({title}) => {
     return (
         <header>
             <div className="header-container">
-                <div className="logo-section">
-                    <img src={logo_scan} alt="logo"/>
-                    <h1>{title}</h1>
+                <div className="left-section">
+                    <div className="logo-section">
+                        <img src={logo_scan} alt="logo"/>
+                        <h1>{title}</h1>
+                    </div>
                 </div>
-                <nav className="navigation-section">
-                    <Link to="/">Главная</Link>
-                    <Link to="/tariffs">Тарифы</Link>
-                    <Link to="/faq">FAQ</Link>
-                </nav>
-                <div className="auth-section">
-                    {isLoggedIn ? (
-                        <div className="user-section">
-                            <div className="user-info">
-                                <span className="user-name">Алексей А.</span>
-                                <button className="logout-button" onClick={logout}>Выйти</button>
+                <div className="center-section">
+                    <nav className="navigation-section">
+                        <Link to="/">Главная</Link>
+                        <Link to="/tariffs">Тарифы</Link>
+                        <Link to="/faq">FAQ</Link>
+                    </nav>
+                </div>
+                <div className="right-section">
+                    {isLoggedIn && <FieldComponent isLoggedIn={isLoggedIn}/>}
+                    <div className="auth-section">
+                        {isLoggedIn ? (
+                            <div className="user-section">
+                                <div className="user-info">
+                                    <span className="user-name">Алексей А.</span>
+                                    <button className="logout-button" onClick={logout}>Выйти</button>
+                                </div>
+                                <img className="user-avatar" src={avatar} alt="User Avatar"/>
                             </div>
-                            <img className="user-avatar" src={avatar} alt="User Avatar"/>
-                            <FieldComponent isLoggedIn={isLoggedIn}/>
-                        </div>
-                    ) : (
-                        <>
-                            <Link to="/signup">Зарегистрироваться</Link>
-                            <div className="divider"></div>
-                            <Link to="/login">Войти</Link>
-                        </>
-                    )}
+                        ) : (
+                            <div className="auth-section">
+                                <Link to="/signup">Зарегистрироваться</Link>
+                                <div className="divider"></div>
+                                <Link to="/login">Войти</Link>
+                            </div>
+                        )}
+                    </div>
                 </div>
             </div>
         </header>

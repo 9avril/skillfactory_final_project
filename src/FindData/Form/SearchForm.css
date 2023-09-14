@@ -188,4 +188,53 @@
     flex-direction: row;
 }
 
+@media (max-width: 768px) {
+    .search-form {
+        width: 100%; /* на всю ширину экрана */
+        height: auto; /* автоматическая высота */
+        padding: 10px; /* уменьшенный отступ */
+        margin: 0; /* отменяем отступы */
+        display: block; /* располагаем блоки вертикально */
+    }
+
+    .text-style {
+        font-size: 16px; /* уменьшенный размер шрифта */
+    }
+
+    .input-style {
+        width: 100%; /* на всю ширину родительского блока */
+        height: 35px; /* уменьшенная высота */
+    }
+
+    .input-label {
+        margin-bottom: 5px; /* уменьшенный отступ */
+    }
+
+    .input-wrapper {
+        margin-bottom: 20px; /* уменьшенный отступ между элементами */
+    }
+
+    .dates-wrapper {
+        display: block; /* элементы друг под другом */
+    }
+
+    .date-input {
+        width: 100%; /* на всю ширину родительского блока */
+        margin-bottom: 10px; /* отступ между датами */
+    }
+
+    .right-block {
+        align-items: center; /* выравниваем блоки по центру */
+    }
+
+    .checkboxes {
+        display: none;
+    }
+
+    .search-button {
+        width: 100%; /* на всю ширину родительского блока */
+        margin-right: 0; /* отменяем отступ справа */
+    }
+}
+
 

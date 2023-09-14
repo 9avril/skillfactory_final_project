@@ -145,3 +145,44 @@ label {
     color: #949494;
     margin-bottom: 8px;
 }
+
+@media (max-width: 768px) {
+    .auth-form {
+        position: static;
+        margin: 20px 0;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .auth-btn {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .tabs {
+        padding: 0 20px;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .auth-form {
+        padding: 15px;
+    }
+
+    .tabs {
+        flex-direction: column;
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+
+    .tab-item:nth-child(1)::before,
+    .tab-item:nth-child(2)::before {
+        width: 70%;
+    }
+
+    .auth-btn {
+        width: 100%;
+    }
+}

@@ -1,4 +1,3 @@
-
 .find-data-container {
     display: flex;
     flex-direction: column;
@@ -6,6 +5,10 @@
     height: 100%;
 }
 
+.find-data-header,
+.find-data-subheader {
+    margin-left: 30px;
+}
 
 .find-data-header {
     font-family: 'Ferry', sans-serif;
@@ -15,7 +18,6 @@
     letter-spacing: 0.03em;
     text-align: left;
     color: #000000;
-    margin-left: 30px;
 }
 
 .find-data-subheader {
@@ -24,21 +26,24 @@
     font-size: 20px;
     line-height: 24.2px;
     letter-spacing: 2%;
-    margin-left: 30px;
 }
 
 .raketa-image {
-    width: 440px;
-    height: 470px;
-    margin-bottom: 70px;
+    position: absolute;
+    top: 444px;
+    left: 1005px;
 }
 
 .img-container {
     align-self: flex-end;
 }
 
-.document-image {
+.document-image,
+.folders-image {
     position: absolute;
+}
+
+.document-image {
     width: 91.00005340576172px;
     height: 111.1182861328125px;
     top: 225px;
@@ -46,7 +51,6 @@
 }
 
 .folders-image {
-    position: absolute;
     width: 140.60792541503906px;
     height: 68.39352416992188px;
     top: 243px;
@@ -57,4 +61,29 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+
+@media (max-width: 768px) {
+    .raketa-image {
+        position: static;
+        width: 60vw;
+        margin-bottom: 10px;
+    }
+
+    .form-and-image {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img-container {
+        order: 2;
+        margin-top: 20px;
+    }
+
+    .search-form {
+        width: 100%;
+        max-width: 768px;
+        margin: 0 auto;
+    }
 }

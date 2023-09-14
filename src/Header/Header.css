@@ -8,6 +8,18 @@
     margin-top: -20px;
 }
 
+.left-section,
+.center-section,
+.right-section {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.center-section {
+    justify-content: center;
+}
+
 .logo-section {
     display: flex;
     margin-left: 20px;
@@ -19,6 +31,15 @@
 }
 
 .navigation-section,
+.auth-section {
+    display: flex;
+    align-items: center;
+}
+
+.navigation-section {
+    margin-right: 10px;
+}
+
 .auth-section {
     display: flex;
     align-items: center;
@@ -39,12 +60,12 @@
 }
 
 .auth-section a:first-child {
-    opacity: 0.6; /* Сделает ссылку "Зарегистрироваться" прозрачной на 40% */
+    opacity: 0.6;
 }
 
 .auth-section a:last-child {
-    border: 2px solid #7CE3E1; /* Добавит рамку вокруг ссылки "Войти" */
-    padding: 5px 10px; /* Добавьте отступы вокруг текста внутри рамки */
+    border: 2px solid #7CE3E1;
+    padding: 5px 10px;
     border-radius: 5px;
     background-color: #7CE3E1;
     font-weight: 550;
@@ -55,6 +76,10 @@
     width: 2px;
     background-color: #029491;
     margin: 0 10px;
+}
+
+.right-section .auth-section {
+    margin-left: auto;
 }
 
 .user-section {
@@ -70,7 +95,7 @@
     letter-spacing: 0.01em;
     text-align: left;
     color: #000000;
-    margin-right: 8px; /* Добавляем небольшой отступ между именем и аватаркой */
+    margin-right: 8px;
 }
 
 .user-info {

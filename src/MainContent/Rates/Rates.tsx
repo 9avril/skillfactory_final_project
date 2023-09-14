@@ -30,6 +30,13 @@ const Rates: React.FC = () => {
                         </div>
                     </div>
                     <div className="rate-body">
+                        {isLoggedIn ? (
+                            <div className="current-rate-badge">
+                                Текущий тариф
+                            </div>
+                        ) : (
+                            <div></div>
+                        )}
                         <div className="price">
                             <span className="current-price">799 ₽</span>
                             <span className="old-price">1 200 ₽</span>
@@ -67,7 +74,7 @@ const Rates: React.FC = () => {
                             <span className="old-price">2 600 ₽</span>
                         </div>
                         <p className="installment-info">или 279 ₽/мес. при рассрочке на 24 мес.</p>
-                        <h4>В тариф входит:</h4>
+                        <h4 className="rate-list">В тариф входит:</h4>
                         <ul>
                             <li><img src={galochka} alt="check-icon" className="list-icon"/>Все пункты тарифа Beginner
                             </li>
@@ -94,7 +101,7 @@ const Rates: React.FC = () => {
                             <span className="old-price">3 700 ₽</span>
                         </div>
                         <p className="installment-info"></p>
-                        <h4>В тариф входит:</h4>
+                        <h4 className="rate-list">В тариф входит:</h4>
                         <ul>
                             <li><img src={galochka} alt="check-icon" className="list-icon"/>Все пункты тарифа Pro</li>
                             <li><img src={galochka} alt="check-icon" className="list-icon"/>Безлимитное количество
